@@ -12,11 +12,44 @@ public class javaTasks {
     }
 
     private static void howToUseSwitch() {
+        //TASK 4
+        Scanner console = new Scanner(System.in);
+        int number = console.nextInt();
+
+        int a = 10;
+        int b = 20;
+        int sum;
+        String noMoreOptions;
+
+
+
+        switch (number) {
+            case 1: sum = a + b;
+                System.out.println("Result is ="+sum);
+                break;
+            case 2: sum = a - b;
+                System.out.println("Result is ="+sum);
+                break;
+            case 3: sum = b - 1;
+                System.out.println("Result is ="+sum);
+                break;
+            case 4: sum = a * b;
+                System.out.println("Result is ="+sum);
+                break;
+            case 5: sum = a / b;
+                System.out.println("Result is ="+sum);
+                break;
+            case 6: sum = b / a;
+                System.out.println("Result is ="+sum);
+                break;
+            default: noMoreOptions = "Invalid choice";
+
+                System.out.println(number + noMoreOptions);
     }
 
     private static void whichBonus() {
 
-        //TASK 4
+        //TASK 3
         Scanner console = new Scanner(System.in);
         int bonus = console.nextInt();
         int firstBonus = 10;
